@@ -1,0 +1,397 @@
+body{
+  margin: 0;
+}
+
+.header{
+    margin-top: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #000000;
+  }
+  .header_inner{
+    max-width: 1920px;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .header_logo{
+    flex: none;
+    width: auto;
+    height: 45px;
+  }
+  .header_navgroup{
+    margin-left: auto;
+    display: flex;
+    flex: none;
+  }
+  .header_navgroup > * + *{
+    margin-left: 60px;
+  }
+  .header_navitem{
+    font-size: 20px;
+    font: bold;
+    color: #2963AE;
+  }
+
+
+
+/* スライド */
+
+
+.slideBox {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+}
+
+.title {
+  z-index: 11;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+  
+  /* imgのみ */
+  .slide1 {
+    margin-top: 70px;
+    z-index: 10;
+    opacity: 0;
+    width: 100%;
+    height: 800px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-animation: anime 12s 0s infinite;
+    animation: anime 12s 0s infinite;
+  }
+  
+  .slide1:nth-of-type(2) {
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+  }
+
+  
+  /* ふわっとアニメーション */
+  @keyframes anime {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    35% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+      z-index: 9;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes anime {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    35% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+      z-index: 9;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+
+/*第二部*/
+
+.intro{
+  margin-top: 870px;
+  background-color: #2963AE;
+  height: 900px;
+  width: 100%;
+}
+
+.intro_title{
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font: bolder;
+  padding-top: 80px;
+}
+
+.intro_marker{
+  background: linear-gradient(transparent 55%, #D6C423 55%);
+}
+
+.intro_explain{
+  color: #ffffff;
+  font-size: 22px;
+  font: bolder;
+}
+/*横並び*/
+.intro_flex1 {
+  display: flex; /*横並び*/
+}
+
+.intro_flex1 .intro_phone {
+  width: 500px; /*画像サイズ指定*/
+  margin: 0;
+  padding: 20;
+  overflow: hidden;
+  position: relative;
+}
+
+.intro_flex1 .intro_explain {
+  margin: 70px 80px 0 200px;
+  padding: 0;
+}
+/*横並び*/
+.intro_flex2 {
+  display: flex; /*横並び*/
+}
+
+.intro_flex2 .intro_mark1 {
+  width: 300px; /*画像サイズ指定*/
+  margin: 50px 60px 0 200px;
+  padding: 0;
+}
+
+.intro_flex2 .intro_mark2 {
+  width: 300px; /*画像サイズ指定*/
+  margin: 50px 60px 0 30px;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.intro_flex2 .intro_mark3 {
+  width: 300px; /*画像サイズ指定*/
+  margin: 50px 60px 0 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+
+/*メイン*/
+.main{
+  background-image: url(img/名称未設定のデザイン\ size大.png);
+  height: 2000px;
+  width: 100%;
+}
+
+.main_title{
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font: bolder;
+  padding-top: 80px;
+}
+
+.main_marker{
+  background: linear-gradient(transparent 55%, #D6C423 55%);
+}
+/*メイン１*/
+.main_subtitle1{
+  font-size: 32px;
+  color: #ffffff;
+  font: bold;
+  text-align: center;
+  margin-top: 90px;
+}
+.main_explain1{
+  color: #ffffff;
+  font-size: 22px;
+  font: bolder;
+}
+
+.main_flex1 {
+  display: flex; /*横並び*/
+}
+
+.main_flex1 .main_phone1 {
+  width: 500px; /*画像サイズ指定*/
+  margin: 4% 0 0 0;
+  padding: 0px;
+  overflow: hidden;
+  position: relative;
+}
+
+.main_flex1 .main_explain1 {
+  margin: 10% 10% 0 15%;
+  padding: 0;
+}
+/*メイン２*/
+.main_subtitle2{
+  font-size: 32px;
+  color: #ffffff;
+  font: bold;
+  text-align: center;
+  margin-top: 90px;
+}
+.main_explain2{
+  color: #ffffff;
+  font-size: 22px;
+  font: bolder;
+}
+
+.main_flex2 {
+  display: flex; 
+}
+
+.main_flex2 .main_phone2 {
+  width: 450px;
+  height: 300px;
+  margin: 4% 4% 0 0;
+  padding: 0px;
+  overflow: hidden;
+  position: relative;
+}
+
+.main_flex2 .main_explain2 {
+  margin: 10% 10% 0 15%;
+  padding: 0;
+}
+
+/*メイン３*/
+.main_subtitle3{
+  font-size: 32px;
+  color: #ffffff;
+  font: bold;
+  text-align: center;
+  margin-top: 90px;
+}
+.main_explain3{
+  color: #ffffff;
+  font-size: 22px;
+  font: bolder;
+}
+
+.main_flex3 {
+  display: flex; 
+}
+
+.main_flex3 .main_phone3 {
+  width: 500px; 
+  margin: 4% 0 0 0;
+  padding: 0px;
+  overflow: hidden;
+  position: relative;
+}
+
+.main_flex3 .main_explain3 {
+  margin: 10% 10% 0 15%;
+  padding: 0;
+}
+
+/*ラスト*/
+.start{
+  background-image: url(img/名称未設定のデザイン\ \(2\).png);
+  height: 800px;
+  width: 100%;
+}
+
+.start_title{
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font: bolder;
+  padding-top: 80px;
+  padding-bottom: 150px;
+}
+
+.start_marker{
+  background: linear-gradient(transparent 55%, #D6C423 55%);
+}
+
+/*仕上げ*/
+.start_flex1{
+  font-size: 32px;
+  color: #ffffff;
+  background-color: #D6C423;
+  text-align: center;
+  line-height: 200px;
+  font: bold;
+}
+
+.start_flex2{
+  font-size: 32px;
+  color: #FFFFFF;
+  background-color: #D6C423;
+  text-align: center;
+  line-height: 200px;
+  font: bold;
+}
+
+.start_flex{
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 65vw;
+}
+
+.start_flex .start_flex1 {
+  padding: 0px;
+  overflow: hidden;
+  position: relative;
+}
+
+.start_flex .start_flex2 {
+  padding: 0px;
+  overflow: hidden;
+  position: relative;
+} 
+
+/*チェンジ*/
+.start_flex1{
+  transition: 1s;
+  border-radius: 100vh;
+  width: 300px;
+  height: 200px;
+}
+
+.start_flex2{
+  transition: 1s;
+  border-radius: 100vh;
+  width: 300px;
+  height: 200px;
+}
+
+.start_flex1:hover{
+  line-height: 300px;
+  border-radius: 50px;
+  width: 300px;
+  height: 300px;
+}
+
+.start_flex2:hover{
+  line-height: 300px;
+  border-radius: 50px;
+  width: 300px;
+  height: 300px;
+}
